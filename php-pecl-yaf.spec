@@ -7,7 +7,7 @@
 Summary:	PHP Framework in PHP extension
 Name:		%{php_name}-pecl-%{modname}
 Version:	2.2.9
-Release:	1
+Release:	2
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
@@ -16,6 +16,7 @@ URL:		http://pecl.php.net/package/yaf
 BuildRequires:	%{php_name}-devel >= 4:5.2
 BuildRequires:	rpmbuild(macros) >= 1.666
 %{?requires_php_extension}
+Provides:	php(%{modname}) = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
